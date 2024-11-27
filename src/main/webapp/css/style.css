@@ -50,7 +50,7 @@
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.4;
     --bs-body-color: #495057;
-    --bs-body-bg: #f8f9fa;
+    --bs-body-bg: #709efa;
     --bs-border-width: 1px;
     --bs-border-style: solid;
     --bs-border-color: #dee2e6;
@@ -3649,15 +3649,15 @@ textarea.form-control-lg{
     --bs-card-border-width: 1px;
     --bs-card-border-color: var(--bs-border-color-translucent);
     --bs-card-border-radius: .5rem;
-    --bs-card-box-shadow: ;
+    --bs-card-box-shadow: #fff;
     --bs-card-inner-border-radius: calc(.5rem - 1px);
     --bs-card-cap-padding-y: .75rem;
     --bs-card-cap-padding-x: 1.5rem;
-    --bs-card-cap-bg: rgba(0,0,0,0.03);
+    --bs-card-cap-bg: #c4e7fa;
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: #f8f9fa;
+    --bs-card-bg: #c4e7fa;
     --bs-card-img-overlay-padding: 1.5rem;
     --bs-card-group-margin: .75rem;
     position:relative;
@@ -3666,7 +3666,7 @@ textarea.form-control-lg{
     min-width:0;
     height:var(--bs-card-height);
     word-wrap:break-word;
-    background-color:var(--bs-card-bg);
+    background-color:var(--bs-card-bg) !important;
     background-clip:border-box;
     border:var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius:var(--bs-card-border-radius);
@@ -8300,11 +8300,11 @@ textarea.form-control-lg{
 }
 @media (prefers-color-scheme: dark){
     body{
-        background-color:#343a40;
-        color:#dee2e6
+        background-color:#709efa;
+        color:#000
     }
     .bg-light,.jumbotron{
-        background-color:#343a40 !important
+        background-color:#70fad0 !important
     }
     .bg-dark{
         background-color:#495057 !important
@@ -8313,6 +8313,6 @@ textarea.form-control-lg{
         background-color:#343a40
     }
     .accordion-button,.breadcrumb-item.active,.figure-caption,.list-group-item,.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link{
-        color:#dee2e6
+        color:#000
     }
 }

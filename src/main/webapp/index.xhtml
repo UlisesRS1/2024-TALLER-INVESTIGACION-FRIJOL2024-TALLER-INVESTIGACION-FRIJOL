@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Home – Frijol</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+    </head>
+    <body id="homePage">
+        <div class="toast-container position-fixed end-0 mt-3 me-3">
+            <div aria-atomic="true" aria-live="polite" class="toast js-cartToast" role="status">
+                <div class="toast-header fw-bold">
+                    Added to cart
+                </div>
+                <div class="toast-body">
+                    Product Name was added to the cart.
+                </div>
+            </div>
+            <div aria-atomic="true" aria-live="polite" class="toast js-wishlistToast" role="status">
+                <div class="toast-header fw-bold">
+                    Added to wishlist
+                </div>
+                <div class="toast-body">
+                    Product Name was added to the wishlist.
+                </div>
+            </div>
+        </div>
+        <header>
+
+            <nav class="navbar navbar-light bg-light navbar-expand-lg">
+
+                <div class="container">
+                    <a href="index.xhtml" class="navbar-brand">Frijol</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mb-2 mb-lg-0" id="navbar">
+                        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                            <li class="nav-item">
+                                <a href="shop.xhtml" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.xhtml" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.xhtml" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="mb-3 mb-lg-0 me-lg-2">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search text here" aria-label="Search products here"></input>
+                                    <button type="submit" class="btn btn-secondary"><i class="bi-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="dropdown d-inline-block me-2">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">USD $</button>
+                            <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                                <button type="button" class="dropdown-item">EUR €</button>
+                                <button type="button" class="dropdown-item">GBP £</button>
+                            </div>
+                        </div>
+                        <a href="wishlist.xhtml" class="btn btn-secondary me-2">
+                            <i class="bi-heart"></i>
+                        </a>
+                        <a href="cart.xhtml" class="btn btn-primary">
+                            <i class="bi-cart"></i>
+                            (0)
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+
+        </header>
+        <section class="bg-light pb-5 pt-3 pt-lg-5 mb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <h:graphicImage class="img-fluid" name="images/800x600.png"/>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-1">
+                            Frijol
+                        </h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices. Ut metus tortor, aliquet non rutrum ac, dapibus vehicula augue.
+                        </p>
+                        <h:outputLink class="btn btn-lg btn-primary me-2" value="shop.xhtml">
+                            Shop
+                        </h:outputLink>
+                        <h:outputLink class="btn btn-lg btn-outline-primary" value="about.xhtml">
+                            About
+                        </h:outputLink>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="text-center mb-4">
+                    Benefits
+                </h2>
+                <div class="row row-cols-1 row-cols-lg-2 gy-3 gy-md-4 g-lg-5">
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <h:graphicImage class="img-fluid" name="images/592x333.png"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>
+                                    Benefit #1
+                                </h3>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <h:graphicImage class="img-fluid" name="images/592x333.png"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>
+                                    Benefit #2
+                                </h3>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <h:graphicImage class="img-fluid" name="images/592x333.png"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>
+                                    Benefit #3
+                                </h3>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                <h:graphicImage class="img-fluid" name="images/592x333.png"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>
+                                    Benefit #4
+                                </h3>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5">
+                <h2 class="text-center mb-4">
+                    Collections
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices. Ut metus tortor, aliquet non rutrum ac, dapibus vehicula augue. Etiam congue erat sem, vitae gravida nunc pretium vitae. Fusce sed ex tellus. Quisque auctor viverra feugiat. Nulla urna odio, porta ut tristique ut, consequat non dolor. Etiam varius maximus dolor, at consectetur lectus. Mauris rutrum aliquet tellus, sed convallis diam.
+                </p>
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-indicators">
+                        <h:form><h:commandButton class="active" type="button">
+                            </h:commandButton></h:form>
+                        <h:form><h:commandButton type="button">
+                            </h:commandButton></h:form>
+                        <h:form><h:commandButton type="button">
+                            </h:commandButton></h:form>
+                        <h:form><h:commandButton type="button">
+                            </h:commandButton></h:form>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <h:outputLink value="#">
+                                <h:graphicImage class="d-block img-fluid" name="images/1600x900.png"/>
+                                <div class="carousel-caption">
+                                    <h3>
+                                        Collection #1
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </h:outputLink>
+                        </div>
+                        <div class="carousel-item">
+                            <h:outputLink value="#">
+                                <h:graphicImage class="d-block img-fluid" name="images/1600x900.png"/>
+                                <div class="carousel-caption">
+                                    <h3>
+                                        Collection #2
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </h:outputLink>
+                        </div>
+                        <div class="carousel-item">
+                            <h:outputLink value="#">
+                                <h:graphicImage class="d-block img-fluid" name="images/1600x900.png"/>
+                                <div class="carousel-caption">
+                                    <h3>
+                                        Collection #3
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </h:outputLink>
+                        </div>
+                        <div class="carousel-item">
+                            <h:outputLink value="#">
+                                <h:graphicImage class="d-block img-fluid" name="images/1600x900.png"/>
+                                <div class="carousel-caption">
+                                    <h3>
+                                        Collection #4
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </h:outputLink>
+                        </div>
+                    </div>
+                    <h:form><h:commandButton class="carousel-control-prev" type="button">
+                            <span aria-hidden="true" class="carousel-control-prev-icon">
+                            </span>
+                            <span class="visually-hidden">
+                                Previous
+                            </span>
+                        </h:commandButton></h:form>
+                    <h:form><h:commandButton class="carousel-control-next" type="button">
+                            <span aria-hidden="true" class="carousel-control-next-icon">
+                            </span>
+                            <span class="visually-hidden">
+                                Next
+                            </span>
+                        </h:commandButton></h:form>
+                </div>
+            </section>
+            <section class="mb-5">
+                <h2 class="text-center mb-4">
+                    Popular Products
+                </h2>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-md-6 col-xxl-4">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <h:graphicImage class="card-img-top" name="images/1600x900.png"/>
+                                <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">
+                                    Tag
+                                </div>
+                            </div>
+                            <div class="card-body position-relative">
+                                <h3 class="h4">
+                                    <h:outputLink class="stretched-link" value="product.xhtml">
+                                        Product Name
+                                    </h:outputLink>
+                                </h3>
+                                <div class="text-uppercase fw-bold text-muted mb-1">
+                                    Frijol
+                                </div>
+                                <p class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                                    <i class="bi-check-circle">
+                                    </i>
+                                    In stock
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="fs-3 fw-bold lh-1">
+                                        $199
+                                        <span class="fs-6 text-decoration-line-through text-muted">
+                                            ($299)
+                                        </span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h:form><h:commandButton class="btn btn-primary me-2 js-addToCart" type="button">
+                                                <i class="bi-cart-plus">
+                                                </i>
+                                                <span class="visually-hidden">
+                                                    Add to cart
+                                                </span>
+                                            </h:commandButton></h:form>
+                                        <div class="dropdown">
+                                            <h:form><h:commandButton class="btn btn-secondary" id="addToWishlistDropdown1" type="button">
+                                                    <i class="bi-heart">
+                                                    </i>
+                                                    <span class="visually-hidden">
+                                                        Add to wishlist
+                                                    </span>
+                                                </h:commandButton></h:form>
+                                            <div aria-labelledby="addToWishlistDropdown1" class="dropdown-menu">
+                                                <h6 class="dropdown-header">
+                                                    Select wishlist
+                                                </h6>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #1
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #2
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #3
+                                                    </h:commandButton></h:form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <h:graphicImage class="card-img-top" name="images/1600x900.png"/>
+                                <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">
+                                    Tag
+                                </div>
+                            </div>
+                            <div class="card-body position-relative">
+                                <h3 class="h4">
+                                    <h:outputLink class="stretched-link" value="product.xhtml">
+                                        Product Name
+                                    </h:outputLink>
+                                </h3>
+                                <div class="text-uppercase fw-bold text-muted mb-1">
+                                    Frijol
+                                </div>
+                                <p class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-warning">
+                                    <i class="bi-check-circle">
+                                    </i>
+                                    Only few in stock
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="fs-3 fw-bold lh-1">
+                                        $199
+                                        <span class="fs-6 text-decoration-line-through text-muted">
+                                            ($299)
+                                        </span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h:form><h:commandButton class="btn btn-primary me-2 js-addToCart" type="button">
+                                                <i class="bi-cart-plus">
+                                                </i>
+                                                <span class="visually-hidden">
+                                                    Add to cart
+                                                </span>
+                                            </h:commandButton></h:form>
+                                        <div class="dropdown">
+                                            <h:form><h:commandButton class="btn btn-secondary" id="addToWishlistDropdown2" type="button">
+                                                    <i class="bi-heart">
+                                                    </i>
+                                                    <span class="visually-hidden">
+                                                        Add to wishlist
+                                                    </span>
+                                                </h:commandButton></h:form>
+                                            <div aria-labelledby="addToWishlistDropdown2" class="dropdown-menu">
+                                                <h6 class="dropdown-header">
+                                                    Select wishlist
+                                                </h6>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #1
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #2
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #3
+                                                    </h:commandButton></h:form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <h:graphicImage class="card-img-top" name="images/1600x900.png"/>
+                                <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">
+                                    Tag
+                                </div>
+                            </div>
+                            <div class="card-body position-relative">
+                                <h3 class="h4">
+                                    <h:outputLink class="stretched-link" value="product.xhtml">
+                                        Product Name
+                                    </h:outputLink>
+                                </h3>
+                                <div class="text-uppercase fw-bold text-muted mb-1">
+                                    Frijol
+                                </div>
+                                <p class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                                </p>
+                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-danger">
+                                    <i class="bi-check-circle">
+                                    </i>
+                                    Out of stock
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="fs-3 fw-bold lh-1">
+                                        $199
+                                        <span class="fs-6 text-decoration-line-through text-muted">
+                                            ($299)
+                                        </span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h:form><h:commandButton class="btn btn-primary me-2 js-addToCart" type="button">
+                                                <i class="bi-cart-plus">
+                                                </i>
+                                                <span class="visually-hidden">
+                                                    Add to cart
+                                                </span>
+                                            </h:commandButton></h:form>
+                                        <div class="dropdown">
+                                            <h:form><h:commandButton class="btn btn-secondary" id="addToWishlistDropdown3" type="button">
+                                                    <i class="bi-heart">
+                                                    </i>
+                                                    <span class="visually-hidden">
+                                                        Add to wishlist
+                                                    </span>
+                                                </h:commandButton></h:form>
+                                            <div aria-labelledby="addToWishlistDropdown3" class="dropdown-menu">
+                                                <h6 class="dropdown-header">
+                                                    Select wishlist
+                                                </h6>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #1
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #2
+                                                    </h:commandButton></h:form>
+                                                <h:form><h:commandButton class="dropdown-item js-addToWishlist" type="button">
+                                                        Wishlist #3
+                                                    </h:commandButton></h:form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="bg-dark py-5">
+            <div class="container">
+                <h:form class="text-white" id="newsletterForm">
+                    <h2 class="text-center mb-4">
+                        Newsletter
+                    </h2>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="firstName">
+                                    First name:
+                                </label>
+                                <h:inputText class="form-control" id="firstName"> </h:inputText>
+                                <p class="valid-feedback">
+                                    Valid feedback text
+                                </p>
+                                <p class="invalid-feedback">
+                                    Invalid feedback text
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="lastName">
+                                    Last name:
+                                </label>
+                                <h:inputText class="form-control" id="lastName"/>
+                                <p class="valid-feedback">
+                                    Valid feedback text
+                                </p>
+                                <p class="invalid-feedback">
+                                    Invalid feedback text
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="email">
+                                    Your email:
+                                </label>
+                                <h:inputText class="form-control" id="email"/>
+                                <p class="valid-feedback">
+                                    Valid feedback text
+                                </p>
+                                <p class="invalid-feedback">
+                                    Invalid feedback text
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <h:selectBooleanCheckbox class="form-check-input" id="terms" value="terms"> </h:selectBooleanCheckbox>
+                        <label class="form-check-label" for="terms">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <h:outputLink value="#">
+                                adipiscing elit
+                            </h:outputLink>
+                            .
+                        </label>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary" id="newsletterButton">Subscribe</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <div class="collapse mt-3" id="newsletterConfirmation">
+                        <div class="alert alert-success">
+                            <h3 class="alert-heading h4">
+                                Subscribed!
+                            </h3>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.
+                            </p>
+                        </div>
+                    </div>
+                </h:form>
+            </div>
+        </section>
+        <footer class="bg-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <h6>
+                            Quick links
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h:outputLink value="index.xhtml">
+                                    Home
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="shop.xhtml">
+                                    Shop
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="about.xhtml">
+                                    About
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="contact.xhtml">
+                                    Contact
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="wishlist.xhtml">
+                                    Wishlist
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="cart.xhtml">
+                                    Cart
+                                </h:outputLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h6>
+                            Information
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h:outputLink value="faq.xhtml">
+                                    Frequently Asked Questions
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="shipping.xhtml">
+                                    Shipping
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="returns.xhtml">
+                                    Returns
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="terms-of-service.xhtml">
+                                    Terms of Service
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <h:outputLink value="privacy-policy.xhtml">
+                                    Privacy Policy
+                                </h:outputLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h6>
+                            Follow us
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi-facebook text-primary">
+                                </i>
+                                <h:outputLink value="#">
+                                    Facebook
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <i class="bi-instagram text-primary">
+                                </i>
+                                <h:outputLink value="#">
+                                    Instagram
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <i class="bi-twitter text-primary">
+                                </i>
+                                <h:outputLink value="#">
+                                    Twitter
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <i class="bi-youtube text-primary">
+                                </i>
+                                <h:outputLink value="#">
+                                    YouTube
+                                </h:outputLink>
+                            </li>
+                            <li>
+                                <i class="bi-linkedin text-primary">
+                                </i>
+                                <h:outputLink value="#">
+                                    LinkedIn
+                                </h:outputLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h6>
+                            Contact
+                        </h6>
+                        <address>
+                            <strong>
+                                Frijol
+                            </strong>
+                            <br/>
+                            Steet Name 123
+                            <br/>
+                            ZIP code and city
+                            <br/>
+                            <i class="bi-telephone text-primary">
+                            </i>
+                            <h:outputLink value="tel:+1234567890">
+                                (123) 456-7890
+                            </h:outputLink>
+                            <br/>
+                            <i class="bi-envelope text-primary">
+                            </i>
+                            <h:outputLink value="mailto:info@domain.com">
+                                info@brandname.com
+                            </h:outputLink>
+                        </address>
+                    </div>
+                </div>
+                <div class="text-center">
+                    2022 Frijol. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        <div aria-hidden="true" aria-labelledby="newsletterModalTitle" class="modal fade" id="newsletterModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsletterModalTitle">
+                            Terms and conditions
+                        </h5>
+                        <h:form><h:commandButton class="btn-close" type="button">
+                            </h:commandButton></h:form>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                        </p>
+                        <p>
+                            Pellentesque vitae convallis magna. Morbi non elementum mi. Suspendisse at mollis arcu, eu tempus tellus. Aenean fringilla eleifend nisl. Aliquam erat volutpat. Sed a tortor quis tortor convallis mattis. Nunc congue massa vitae lectus dictum, a mattis metus dignissim.
+                        </p>
+                        <p>
+                            Nulla feugiat, lorem sit amet vehicula hendrerit, velit eros pellentesque est, at dictum elit risus id diam. In ante lorem, blandit vel dui in, sagittis laoreet erat. Proin dictum sit amet urna ut placerat. Pellentesque laoreet, dolor vitae facilisis feugiat, quam quam gravida elit, nec sagittis orci metus at leo. In scelerisque felis vel neque lobortis ullamcorper. Praesent quis sagittis neque, nec eleifend neque. Suspendisse at consectetur eros. Mauris lectus libero, molestie vel dapibus sit amet, luctus gravida ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut libero neque, pretium quis malesuada eget, congue ac mauris.
+                        </p>
+                        <p>
+                            Aenean quis tristique libero. Vestibulum sagittis, sapien gravida lobortis posuere, diam arcu auctor libero, at tempor mauris nulla vel odio. Phasellus semper eros rutrum mi scelerisque interdum. Maecenas euismod est sit amet justo vestibulum bibendum. Etiam scelerisque sodales nisi nec efficitur. Pellentesque arcu mauris, accumsan eget mollis at, ultrices id ante. Duis in mi eget nisi euismod gravida. Cras pharetra sollicitudin elit, vel eleifend felis dignissim non. Integer leo ex, feugiat eu lorem egestas, mollis suscipit nulla. Duis quis tellus nulla. Maecenas risus ipsum, fringilla at orci sit amet, mattis fringilla orci. Vivamus odio tellus, ornare eu leo id, pellentesque sodales ante.
+                        </p>
+                        <p>
+                            Sed laoreet ut ligula eget fringilla. Suspendisse dapibus dui at ex dictum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi efficitur ac purus eget dignissim. Aliquam ultrices, orci finibus sollicitudin tempus, elit metus scelerisque magna, a rhoncus justo nisl vitae lectus. Nam mollis sed est ut ullamcorper. Curabitur consequat feugiat erat quis molestie. Fusce suscipit sem et nulla dignissim, id malesuada felis laoreet. Cras leo ligula, vulputate id mi ac, gravida porta sem. Mauris ullamcorper lectus ac eleifend elementum. Ut id velit consequat, facilisis leo vitae, volutpat nisi. Nunc hendrerit libero mi. Integer scelerisque mattis neque placerat condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eu odio mi. Duis interdum vulputate turpis pretium congue.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <h:form><h:commandButton class="btn btn-secondary" type="button">
+                                Close
+                            </h:commandButton></h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h:outputScript library="webjars" name="bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+        </h:outputScript>
+        <script src="js/script.js">
+        </script>
+    </body>
+</html>
